@@ -35,6 +35,7 @@ public class EncodeMode extends AbstractModificationMode {
         encoders.add(new HTMLEncoder());
         encoders.add(new HTMLSpecialCharEncoder());
         encoders.add(new Base64Encoder());
+        encoders.add(new ThriftBinaryEncoder()); 
         // Add base64 URL safe encoding
         encoders.add(new Base64UrlEncoder());
         encoders.add(new ASCIIHexEncoder());

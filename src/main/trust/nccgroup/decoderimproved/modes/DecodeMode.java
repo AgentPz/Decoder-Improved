@@ -32,6 +32,7 @@ public class DecodeMode extends AbstractModificationMode {
         decoders.add(new ASCIIHexDecoder());
         decoders.add(new GZIPDecoder());
         decoders.add(new ZlibDecoder());
+        decoders.add(new ThriftBinaryDecoder());
 
         // Swing Components
         decoderComboBox = new JComboBox<>();
